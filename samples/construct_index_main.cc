@@ -10,7 +10,7 @@ int main(int argc, char **argv) {
     exit(EXIT_FAILURE);
   }
 
-  PrunedLandmarkLabeling<> pll;
+  PrunedLandmarkLabeling<16> pll;
   if (!pll.ConstructIndex(argv[1])) {
     cerr << "error: Load or construction failed" << endl;
     exit(EXIT_FAILURE);
